@@ -1,0 +1,38 @@
+.header {
+  padding: 20px 0 23px;
+  z-index: 50;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.header__title {
+  font-family: "Futura";
+  padding-top: 25px;
+  font-size: 45px;
+  line-height: 72px;
+  letter-spacing: -0.69px;
+  text-align: center;
+  color: #ffcc64;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .header__title {
+    padding-top: 20px;
+    font-size: 40px;
+  }
+}
+@media (max-width: 700px) {
+  .header__title {
+    padding-top: 15px;
+    font-size: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .header__title {
+    font-size: 25px;
+    line-height: 45px;
+  }
+}

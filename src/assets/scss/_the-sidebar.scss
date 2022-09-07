@@ -1,0 +1,111 @@
+.sidebar {
+  position: absolute;
+  padding: 37px 0 25px 34px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 110px;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+.btn-menu {
+  border: none;
+  outline: none;
+  background-image: url("../images/burger-menu.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 16px;
+  background-size: 20px 16px;
+  cursor: pointer;
+  background-color: transparent;
+}
+.sidebar__menu-box {
+    font-family: Kinopoisk;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 12;
+    top: 200px;
+}
+.sidebar__menu-list {
+    padding: 0;
+    margin: 0;
+    margin-top: 180px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.sidebar__menu-list {
+    padding: 0;
+    margin: 0;
+    margin-top: 180px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.sidebar__menu-item:first-of-type {
+    margin-top: 30px;
+}
+
+.sidebar__menu-item {
+    list-style-position: inside;
+    list-style-type: "‒";
+    margin-bottom: 45px;
+}
+.sidebar__menu-item.sidebar__menu-item_active {
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+    list-style-type: none;
+    font-size: 16px;
+    line-height: 15px;
+    font-weight: 500;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.sidebar__menu-item {
+    list-style-position: inside;
+    list-style-type: "‒";
+    margin-bottom: 45px;
+}
+
+.sidebar__menu-item:last-of-type {
+    margin-bottom: 97px;
+}
+.sidebar__menu-scroll {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    font-family: Kinopoisk;
+    font-size: 14px;
+    line-height: 15px;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 70px;
+    transform: translate(-55px,-40px) rotate(-90deg);
+}
+.sidebar__menu-scroll:before {
+    content: " ";
+    background-image: url('../images/sidebar-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 63px 4px;
+    background-position: 50%;
+    position: absolute;
+    right: 120px;
+    top: 3px;
+    bottom: 0;
+    transform: rotate(180deg);
+    width: 63px;
+}
+
+@media(max-width: 1200px){
+    .sidebar__menu-box {
+        display: none;
+    }
+}

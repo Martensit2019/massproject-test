@@ -1,0 +1,38 @@
+.main {
+  padding-top: 130px;
+  &__title {
+    font-size: 45px;
+    line-height: 72px;
+    font-weight: 700;
+    letter-spacing: -0.69px;
+    text-align: center;
+    color: #ffcc64;
+    text-transform: uppercase;
+  }
+  &__site {
+    font-family: Kinopoisk;
+    font-size: 14px;
+    line-height: 15px;
+    position: absolute;
+    right: 0;
+    top: 40%;
+    transform-origin: left;
+    transform: translate(50%, -100%) rotate(90deg);
+    color: #333;
+    z-index: 1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  &__btn {
+    position: absolute;
+    top: 0;
+    z-index: 200;
+  }
+}
+
+@media(max-width: 1060px){
+  .main__site{
+    top: 20px;
+  }
+}
